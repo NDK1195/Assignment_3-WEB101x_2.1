@@ -12,6 +12,10 @@ ul {
   list-style: none;
   padding-left: 0;
 }
+a {
+  color: #333;
+  text-decoration: none;
+}
 /* UTILITIES CSS */
 .bg-grey {
   background-color: #f7f7f7;
@@ -80,7 +84,7 @@ hr {
 .banner-text h1 {
   font-size: 42px;
 }
-.banner-text span {
+.banner-text p {
   font-size: 18px;
   font-weight: 300;
 }

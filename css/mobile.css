@@ -2,6 +2,12 @@
   hr {
     display: none;
   }
+  .banner-text h1 {
+    font-size: 20px;
+  }
+  .banner-text p {
+    font-size: 12px;
+  }
   .nav-bar-link {
     border: none;
     padding: 10px 0;
