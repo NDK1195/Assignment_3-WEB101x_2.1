@@ -18,28 +18,66 @@ hr {
   height: 1px;
 }
 #main {
-  display: grid;
-  place-items: center;
-  height: 100vh;
+  margin: 10px;
 }
-/* .grid-layout {
+
+.grid-layout {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px;
-} */
-/* .scopes {
-  grid-column: 1/2;
-  grid-row: 2/3;
+  grid-template-areas:
+    'goals team timeline'
+    'scopes primary timeline';
+  gap: 15px;
+}
+@media screen and (max-width: 991px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'goals'
+      'scopes'
+      'team'
+      'primary'
+      'timeline';
+  }
+}
+.goals {
+  grid-area: goals;
+}
+.team {
+  grid-area: team;
+}
+.scopes {
+  grid-area: scopes;
 }
 .primary {
-  grid-column: 2/3;
-  grid-row: 2/3;
+  grid-area: primary;
 }
 .timeline {
-  grid-row: 1/3;
-} */
+  grid-area: timeline;
+}
 .title {
   color: #199cdb;
   font-weight: 700;
+}
+.icon {
+  font-size: 35px;
+  text-align: center;
+}
+.timeline-number {
+  background-color: #199cdb;
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid #333;
+  color: #fff;
+  font-size: 16px;
+
+  height: 2.5em;
+  width: 2.5em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.border-bottom-dotted {
+  border-bottom: 1px dashed #199cdb;
 }
